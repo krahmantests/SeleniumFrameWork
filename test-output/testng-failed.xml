@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <listeners>
-    <listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Error Validations Test(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rahulshettyacademy.tests.ErrorValidationsTest">
+      <class name="rahulshettyacademy.tests.SubmitOrderTest">
         <methods>
-          <include name="LoginErrorValidation"/>
+          <include name="OrderHistoryTest"/>
+          <include name="submitOrder" invocation-numbers="0"/>
           <include name="launchApplication"/>
           <include name="tearown"/>
         </methods>
-      </class> <!-- rahulshettyacademy.tests.ErrorValidationsTest -->
+      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Error Validations Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

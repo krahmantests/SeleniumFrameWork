@@ -72,7 +72,7 @@ public void OrderHistoryTest() {
 	ProductCatalog productCatalog = landingPage.loginApplication("johndoe4213@gmail.com", "Ps34life");
 	OrderPage ordersPage =  productCatalog.gotoOrdersPage();
 Assert.assertTrue( ordersPage.VerifyOrderDisplay(productName))	;
-
+System.out.println("JOEEEEEEEEE");
 }
 
 
